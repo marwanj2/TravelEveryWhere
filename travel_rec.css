@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("homeImg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: relative;
+    width: 100%;;
+    padding: 16px 20px 30px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-out;
+    backdrop-filter: blur(8px) brightness(1.2);
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #1f2336c7;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: inherit;
+    &:hover,&:focus{
+        text-decoration: underline;
+    }
+}
+
+.list  {
+    list-style-type: none;
+    display: none;
+    margin: 0 auto;
+    @media (min-width: 640px) {
+        display: flex;
+    }
+}
+
+nav #searchBar {
+    display:flex; 
+    margin: 0 10px;
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 25px;
+    height: 45px;
+    border: none;
+    #searchInput {
+        width: 220px;
+        border: none;
+        font-size: 14px;
+    }
+    button {
+        cursor: pointer;
+        color: white;
+        background-color: #2D9596;
+        border:1px solid #2D9596;
+        border-radius: 5px;
+        margin-left: 15px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: bold;
+        &:hover{
+                border: 1px solid #2D9596;
+                color: #2D9596;
+                background-color: white;
+        }
+    }
+    ::placeholder {
+        color: #2D9596;
+        opacity: 1;
+    }
+}
+
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    .icons-rapper{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        top: 40%;
+        left: 0;
+        color: white;
+        .fa {
+            margin-top:25px;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    .overlay-text {
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        background-color: #07436e37;
+        border-radius: 5px;
+        width: 35%;
+        color: rgb(247, 237, 217);
+        padding: 10px 40px;
+        font-size: 32px;
+        text-align: start;
+    }
+    p { font-size: 14px;font-weight: normal;}
+    button {
+        margin: 30px 0;
+        color: white;
+        background-color: #2D9596;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    .icons-rapper{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        top: 40%;
+        left: 0;
+        color: white;
+        .fa {
+            margin-top:25px;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        background-color: #22679931;
+        border-radius: 5px;
+        width: 85%;
+        color: rgb(247, 237, 217);
+        padding: 10px 40px;
+        text-align: start;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    p {
+        font-size: medium;
+    }
+    .team-cards {
+
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 140px;
+        margin: 100px 80px 0 80px;
+        width: 98%;
+        h2 {
+            margin-left: -20px;
+            margin-right: 120px;
+            height: 130px;
+            font-size: 52px;
+            width: fit-content;
+        }
+
+        
+        .card {
+            display: flex;
+            flex-direction: row;
+            
+            width: 230px;
+            height: fit-content;
+            border-radius:10px;
+            background-color: #2d94968a;
+            padding: 0 45px;
+            
+        }
+        p {
+            font-size: 11px;
+            
+        }
+        button {
+            height:fit-content;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #274748f7;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+    
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+
+    .icons-rapper{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        top: 40%;
+        left: 0;
+        color: white;
+        .fa {
+            margin-top:25px;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        border-radius: 5px;
+        width: 30%;
+        color: white;
+        padding: 10px 40px;
+        text-align: start;
+        font-size: 32px;
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30%;
+        left: 50%;  
+        padding: 20px;
+        background-color:#07436e37;
+        border-radius: 7px;
+        width: 45%;
+        
+    
+        form {
+            color: white;
+            font-size: 18px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 7px;
+            background-color: #07436e37;
+            border: 1px solid white;
+        }
+        ::placeholder {
+            color: white;
+            opacity: 1;
+            font-size: 12px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color:#2D9596;
+            border:none;
+            border-radius: 7px;
+        }
+        
+    }
+    
+}
